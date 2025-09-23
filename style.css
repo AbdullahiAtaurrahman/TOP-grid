@@ -28,10 +28,47 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-row: 1/2;
 }
+
+.top-left {
+  grid-column: 1/2;
+}
+
+.top-right {
+  justify-self: end;
+  padding-right: 23%;
+}
 .head-bottom {
+  grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row: 2/3;
+}
+
+#search {
+  width: 340px;
+  height: 32px;
+  border-radius: 24px;
+  border: none;
+}
+
+.bottom-left {
+  grid-column: 1/2;
+}
+
+.btn {
+  width: 20%;
+  padding: 12px;
+  background-color: blue;
+  border-radius: 16px;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(61, 61, 247);
 }
 
 .aside {
